@@ -1,5 +1,7 @@
-<div>
-  <li *ngFor="let v of hero">
-     {{ v.name }}
-  </li>
-</div>
+<div id="test">{{1+2}}</div>
+<input id="text" type="text" [(ngModel)]='hero'>
+<ul>
+  <li *ngFor="let item of list;trackBy: trackByList" (click)='showName(item)'>{{item.name}}</li>
+</ul>
+<button (click)='reset()'>刷新</button><button (click)='update()'>修改</button>
+<app-family [list]='listItem'></app-family>
