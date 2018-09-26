@@ -1,7 +1,3 @@
-<div id="test">{{1+2}}</div>
-<input id="text" type="text" [(ngModel)]='hero'>
-<ul>
-  <li *ngFor="let item of list;trackBy: trackByList" (click)='showName(item)'>{{item.name}}</li>
-</ul>
-<button (click)='reset()'>刷新</button><button (click)='update()'>修改</button>
-<app-family [list]='listItem'></app-family>
+<div id="header">音悦台</div>
+<app-nav></app-nav>
+<app-content></app-content>

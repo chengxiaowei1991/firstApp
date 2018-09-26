@@ -3,17 +3,23 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { FamilyComponent } from './family/family.component';
+import { NavComponent } from './nav/nav.component';
+import { ContentComponent } from './content/content.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    FamilyComponent
+    NavComponent,
+    ContentComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
